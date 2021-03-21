@@ -63,7 +63,7 @@ async def song(client, message):
                         reply_markup=InlineKeyboardMarkup(
                             [[
                                     InlineKeyboardButton(
-                                        "Qrupumuz", url="https://t.me/creativmafia")
+                                        "Qrupumuz✅", url="https://t.me/creativmafia")
                                 ]]
                         ),
                parse_mode="html",
@@ -71,7 +71,7 @@ async def song(client, message):
       )
     video_link = yt_search(args)
     if not video_link:
-        await status.edit("<b>Mahnı tapılmadı 😑</b>")
+        await status.edit("<b>Bu mahnı tapılmadı 😑</b>")
         return ""
     yt = YouTube(video_link)
     audio = yt.streams.filter(only_audio=True).first()
@@ -102,15 +102,15 @@ async def song(client, message):
     user_id = message.from_user["id"]
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("<b>Mahnı adı daxil edin❗\n\nMisal: Elvin Nadir Canan`</b>")
+        await message.reply("<b>Mahnı adı daxil edin❗\n\nMisal: Elvin Nasir Canan`</b>")
         return ""
     status = await message.reply(
-             text="<b>Mahnınız yüklənir, xahiş edirəm gözləyin👀\n\n@Mr_HD_20 tərəfindən hazırlanıb⚡</b>",
+             text="<b>Mahnınız yüklənir, xahiş edirəm gözləyin👀\n\n@Mr_HD_20 tərəfindən yaradıldım⚡</b>",
              disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup(
                             [[
                                     InlineKeyboardButton(
-                                        "Qrupumuz", url="https://t.me/creativechat")
+                                        "Qrupumuz✅", url="https://t.me/creativechat")
                                 ]]
                         ),
                parse_mode="html",
@@ -146,16 +146,16 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey Salam, Mən Mahnı Yükləyən Bot
+               text="""<b>Hey Salam, Mən Hüsü Song🎶 Bot
 İstifadəsi: Sadəcə mahnı adı
 
-@Mr_HD_20 tərəfindən hazırlanıb⚡
+@Mr_HD_20 tərəfindən yaradıldım⚡
 
 Məni necə istifadə edəcəyinizi öyrənmək üçün kömək düyməsini vurun</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Kömək", callback_data="help"),
+                                            "🆘Kömək🆘", callback_data="help"),
                                         InlineKeyboardButton(
                                             "✨Qrupumuz✨", url="https://t.me/creativmafia")
                                     ]]
