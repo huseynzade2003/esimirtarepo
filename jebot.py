@@ -146,7 +146,7 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey Salam {mention}, Mən Mahnı Yükləyən Bot
+               text="""<b>Hey Salam, Mən Mahnı Yükləyən Bot
 İstifadəsi: Sadəcə mahnı adı
 
 @Mr_HD_20 tərəfindən hazırlanıb⚡
