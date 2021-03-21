@@ -110,7 +110,7 @@ async def song(client, message):
                         reply_markup=InlineKeyboardMarkup(
                             [[
                                     InlineKeyboardButton(
-                                        "Qrupumuz✅", url="https://t.me/creativechat")
+                                        "Qrupumuz✅", url="https://t.me/creativmafia")
                                 ]]
                         ),
                parse_mode="html",
