@@ -102,15 +102,15 @@ async def song(client, message):
     user_id = message.from_user["id"]
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("<b>Mahnı adı daxil edin❗\n\nMisal: Elvin Nasir Canan`</b>")
+        await message.reply("<b>Mahnı adı daxil edin❗\n\nMisal: Aslixan Bunlar`</b>")
         return ""
     status = await message.reply(
-             text="<b>Mahnınız yüklənir, xahiş edirəm gözləyin👀\n\n@Mr_HD_20 tərəfindən yaradıldım⚡</b>",
+             text="<b>Mahnınız yüklənir, xahiş edirəm gözləyin👀\n\n@BrendOwner tərəfindən yaradıldım⚡</b>",
              disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup(
                             [[
                                     InlineKeyboardButton(
-                                        "Qrupumuz✅", url="https://t.me/creativmafia")
+                                        "⚡️Brend UserBot⚡️", url="https://t.me/brenduserbot")
                                 ]]
                         ),
                parse_mode="html",
@@ -146,10 +146,12 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey Salam, Mən Hüsü Song🎶 Bot
-İstifadəsi: Sadəcə mahnı adı
+               text="""<b>Hey Salam, Mən Brend⚡ Song🎶
+⚡️Brend UserBot⚡️ un .song əmri üçün yaradılmışam
 
-@Mr_HD_20 tərəfindən yaradıldım⚡
+İstifadə: Sadəcə mahnı adı
+
+@BrendOwner tərəfindən yaradıldım⚡
 
 Məni necə istifadə edəcəyinizi öyrənmək üçün kömək düyməsini vurun</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -157,7 +159,7 @@ Məni necə istifadə edəcəyinizi öyrənmək üçün kömək düyməsini vuru
                                         InlineKeyboardButton(
                                             "🆘Kömək🆘", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "✨Qrupumuz✨", url="https://t.me/creativmafia")
+                                            "⚡️Brend UserBot⚡️", url="https://t.me/BrendUserbot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -188,13 +190,13 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>Mahnı yükləmək üçün bir mahnı adı göndərin
 
-~ @Mr_HD_20</b>""",
+~ [⚡️Brend UserBot⚡️](t.me/brenduserbot) by @BrendOwner</b>""",
             reply_to_message_id=message.message_id
         )
     else:
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="<b>Mahnı Yükləyicidən istifadə\n\nMahnı adı daxil edin❗\n\nMisal: `Elvin Nasir Canan`</b>",
+               text="<b>Mahnı Yükləyicidən istifadə\n\nMahnı adı daxil edin❗\n\nNümunə: `Sansar Salvo - Dum Taka Dum`</b>",
             reply_to_message_id=message.message_id
         )     
         
@@ -210,7 +212,7 @@ print(
     """
 Bot başladı!
 
-Qoşulun @CreativMafia
+Sizdə @BrendUSerbot işlədin ⚡️Brend⚡️ olun
 """
 )
 
